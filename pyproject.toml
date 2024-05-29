@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codetags"
+description = "Manage code comment markup in sections of code that need closer inspection or review"
+authors = [{ name = "Marco Ramos", email = "majramos@gmail.com" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+keywords = ["codetags", "utilities"]
+requires-python = ">=3.9"
+dynamic = ["version", "readme"]
+dependencies = []
+
+[project.urls]
+homepage = "https://gitlab.com/majramos/codetags"
+issues = "https://gitlab.com/majramos/codetags/-/issues"
+changelog = "https://gitlab.com/majramos/codetags/-/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = ["pip-tools"]
+
+[project.scripts]
+codetags = "codetags.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+version = {attr = "codetags.__version__"}
+readme = {file = ["README.md"]}
