@@ -1,7 +1,7 @@
 
 
 
-# current regex 
+# current regex
 ```
 (?:(?:# )(BUG|FIXME|NOTE|TODO)(?::))(.*?)(?:(?:<(.*?)>)|(?:\n))
 ```
