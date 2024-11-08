@@ -1,5 +1,7 @@
 # codetags
 
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+
 Manage code comment markup in sections of code that need closer inspection or review
 
 Based on [PEP 350](https://peps.python.org/pep-0350/#what-are-codetags)
@@ -13,10 +15,14 @@ git clone https://gitlab.com/majramos/codetags.git
 
 cd codetags
 
-pip install codetags
+pip install .
+```
+editable install
+```bash
+pip install -e . --no-build-isolatio
 ```
 
-or 
+or
 ```bash
 python -m pip install git+https://gitlab.com/majramos/codetags.git
 ```
