@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "codetags"
 description = "Manage code comment markup in sections of code that need closer inspection or review"
-authors = [{ name = "Marco Ramos", email = "majramos@gmail.com" }]
+authors = [{ name = "Marco Ramos", email = "code@marcoramos.me" }]
 license = { file = "LICENSE" }
 classifiers = [
     "Operating System :: OS Independent",
